@@ -1,0 +1,12 @@
+# Info #
+Name:peak to peak voltage
+Symbol:peak to peak voltage
+Unit:V
+Analysis type:TRAN
+Definition:
+Note: 
+#
+
+# Commands #
+.MEASURE TRAN #SYMBOL# AVG #NODE# from=120u to=150u
+#

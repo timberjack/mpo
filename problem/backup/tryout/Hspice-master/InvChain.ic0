@@ -1,0 +1,16 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03 64-BIT"
+* "format" "HSP"
+* "rundate" "16:22:53 05/31/2019 "
+* "netlist" "InvChain.sp "
+* "runtitle" "lab 1 problem 1a"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a =   0.            
++ vcc! =   3.0000        
++ z =   3.0000        
+***   END: Saved Operating Point ***                     

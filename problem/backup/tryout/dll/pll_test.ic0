@@ -1,0 +1,59 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03 64-BIT"
+* "format" "HSP"
+* "rundate" "15:36:29 05/31/2019 "
+* "netlist" "pll_test.sp "
+* "runtitle" "*inverter based oscillation pll"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ down = 2.842e-06       
++ osc =   1.2000        
++ ref =   0.            
++ up = 2.760e-06       
++ upb =   1.2000        
++ vc = 8.377e-12       
++ vdd =   1.2000        
++ x100.in1 = 1.553e-03       
++ x100.in2 =   1.2000        
++ x100.in3 = 1.555e-03       
++ x100.in4 =   1.2000        
++ x100.in5 = 1.555e-03       
++ x100.in6 =   1.2000        
++ x100.in7 = 1.555e-03       
++ x100.in8 =   1.2000        
++ x101.reset = 7.850e-07       
++ x101.resetb =   1.2000        
++ x103.1 =   0.5160        
++ x103.2 =   0.2502        
++ x103.n = 7.871e-15       
++ x103.p =   1.2000        
++ x103.rc = 8.377e-12       
++ x100.x1.c = 1.552e-03       
++ x100.x2.c = 2.289e-02       
++ x100.x3.c = 1.554e-03       
++ x100.x4.c = 2.289e-02       
++ x100.x5.c = 1.554e-03       
++ x100.x6.c = 2.289e-02       
++ x100.x7.c = 1.554e-03       
++ x100.x8.c = 2.289e-02       
++ x100.x9.c =   1.0660        
++ x101.xdffup.n1 =   1.2000        
++ x101.xdffup.n2 = 5.572e-07       
++ x101.xdffup.n3 =   1.2000        
++ x101.xdffdn.n1 = 2.759e-06       
++ x101.xdffdn.n2 =   1.2000        
++ x101.xdffdn.n3 = 2.760e-06       
++ x101.xnand2.inta = 2.919e-02       
++ x101.xdffup.xnor21.net14 =   1.2000        
++ x101.xdffup.xnor22.net14 =   0.1731        
++ x101.xdffup.xnor23.net14 =   1.1764        
++ x101.xdffup.xnor24.net14 =   1.2000        
++ x101.xdffdn.xnor21.net14 =   0.1731        
++ x101.xdffdn.xnor22.net14 =   1.2000        
++ x101.xdffdn.xnor23.net14 =   1.2000        
++ x101.xdffdn.xnor24.net14 =   0.1731        
+***   END: Saved Operating Point ***                     

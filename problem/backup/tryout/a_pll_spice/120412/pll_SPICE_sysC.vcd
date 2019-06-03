@@ -1,0 +1,24 @@
+$date
+    Sun Dec  2 16:22:07 2012
+$end
+
+$version
+                 SystemC AMS 1.0 --- 1.0Beta2 --- unknown release date
+$end
+
+$timescale
+      1 fs
+$end
+
+$scope module SystemC_AMS $end
+
+$var real 1 !  v_ctrl $end
+$var real 1 "  vco_spc $end
+$var wire 1 #  vco_out $end
+$var wire 1 $  ref_clk $end
+
+$upscope $end
+
+$enddefinitions $end
+
+

@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03 64-BIT'
+.TITLE '*tri-state i/o optimization'
+ index            wp2              wn2              wp3               
+                  wn3              wp4              wn4               
+                  wp5              wn5              wp10              
+                  wn10             wp11             rmspowo           
+                  tfopt            tropt            temper            
+                  alter#            

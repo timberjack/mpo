@@ -1,0 +1,82 @@
+
+Circuit: *inverter based oscillation frequency
+
+Model issue on line 3 : .model pfet pmos level=49 pu0=0 tox=3.35e-09 k1=0.262208 ...
+unrecognized parameter (nqsmod) - ignored
+unrecognized parameter (tlev) - ignored
+unrecognized parameter (tlevc) - ignored
+Model issue on line 4 : .model nfet nmos level=49 pu0=0 tox=3.12e-09 k1=0.416451 ...
+unrecognized parameter (nqsmod) - ignored
+unrecognized parameter (tlev) - ignored
+unrecognized parameter (tlevc) - ignored
+Error on line 14 : .load  vc_pwl.data
+ unimplemented control card - error 
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+No. of Data Columns : 2  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vc                                           0
+vdd                                        1.2
+vss                                          0
+in1                                 0.00408312
+in                                         1.2
+x1.cn                                0.0040812
+in2                                    1.19998
+x2.cn                                0.0246803
+in3                                 0.00408612
+x3.cn                                0.0040842
+in4                                    1.19998
+x4.cn                                0.0246817
+in5                                 0.00408612
+x5.cn                                0.0040842
+in6                                    1.19998
+x6.cn                                0.0246817
+in7                                 0.00408612
+x7.cn                                0.0040842
+in8                                    1.19998
+x8.cn                                0.0246817
+in9                                 0.00408612
+x9.cn                                0.0040842
+in10                                   1.19998
+x10.cn                               0.0246817
+in11                                0.00408612
+x11.cn                               0.0040842
+in12                                   1.19998
+x12.cn                               0.0246817
+in13                                0.00408612
+x13.cn                               0.0040842
+in14                                   1.19998
+x14.cn                               0.0246817
+in15                                0.00408612
+x15.cn                               0.0040842
+in16                                   1.19998
+x16.cn                               0.0246817
+in17                                0.00408612
+x17.cn                               0.0040842
+in18                                   1.19998
+x18.cn                               0.0246817
+x19.cn                                 1.06433
+vss#branch                         3.79962e-08
+vdd#branch                        -3.23522e-08
+vc#branch                                    0
+
+
+No. of Data Rows : 94926
+elapsed time since last call: 77.941 seconds.
+
+Total elapsed time: 77.941 seconds.
+
+Total DRAM available = 2012.175781 MB.
+DRAM currently available = 998.660156 MB.
+Total ngspice program size = 5.864258 MB.
+Resident set size = 1.406250 MB.
+Shared ngspice pages = 546.000 kB.
+Text (code) pages = 963.000 kB.
+Stack = 0 bytes.
+Library pages = 3.791016 MB.
+

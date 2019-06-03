@@ -1,0 +1,32 @@
+nfeval=280   cmin=16760.80681       cost-variance=7.9748e+11
+nfeval=420   cmin=16760.80681       cost-variance=7.9748e+11
+nfeval=560   cmin=16760.80681       cost-variance=7.9748e+11
+nfeval=700   cmin=16760.80681       cost-variance=7.9748e+11
+nfeval=840   cmin=16760.80681       cost-variance=7.9748e+11
+nfeval=980   cmin=16760.80681       cost-variance=7.8901e+11
+nfeval=1120   cmin=16760.80681       cost-variance=7.8901e+11
+nfeval=1260   cmin=16760.80681       cost-variance=7.8901e+11
+nfeval=1400   cmin=16760.80681       cost-variance=7.5896e+11
+nfeval=1540   cmin=16760.80681       cost-variance=7.5896e+11
+
+
+
+ Best-so-far obj. funct. value = 16760.80681    
+
+ best[0]=-6.052788843   
+ best[1]=2.508247748    
+ best[2]=-7.534618038   
+ best[3]=-9.899226479   
+ best[4]=0.07645656192  
+ best[5]=-5.911233859   
+ best[6]=-8.688301634   
+ best[7]=-5.988762686   
+ best[8]=4.150031108    
+ best[9]=-6.732681637   
+
+ Generation=11  NFEs=1540   Strategy: DE/best/2/exp    
+ NP=140    F=0.85    CR=1       cost-variance=7.5896e+11
+
+
+INFO:  de36.c - Maximum number of generations reached (genmax=10)
+INFO:  Ending optimization

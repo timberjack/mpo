@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03 64-BIT'
+.TITLE 'lab 1 problem 1a'
+ tphl_inv         temper           alter#            
+    failed          25.0000           1.0000         

@@ -1,0 +1,62 @@
+/* "Two clients - Master server - three servers" in UTD (net01, net02, ..., net45) domain using TCP connection */
+/* By Wei Li, wxl069100@utdallas.edu */
+/* Acknowledgement: http://www.linuxhowtos.org/C_C++/socket.htm */
+
+
+
+Getting Started
+----------------------------------------------------------------------------------------------------
+One copy of source codes are in the directory '/src'.
+Three servers' codes are nearly the same, except port number definition. Also the same to the two clients, except their ID.
+Binary files can be created by compiling the source codes in the subdirectories under '/Prj2_AOS', which are:
+'/1', '/2', '/3', '/m', '/a', and '/b'. The first three are servers. '/m' has M-server. The last two have those two clients.
+Suppose compiling the source codes to be s, s, s, m, c, and c in the above subdirectories. e.g.:
+$ gcc mserver.c -o m
+
+
+
+Running the program
+----------------------------------------------------------------------------------------------------
+1. Copy directory '/Prj2_AOS' to any place under home directory.
+
+2. Open three terminals, ssh to net01 (then net11, and net12), go to '/Prj2_AOS/1' (then '/Prj2_AOS/2', and '/Prj2_AOS/3'),
+   Enter the following command in each terminal:
+   $ ./s
+   
+3. Open the 4th terminal, ssh to net19, go to '/Prj1_AOS/m', Enter the following command:
+   $ ./m
+   
+4. Open the last two terminals, ssh to any two of netxx, go to '/Prj2_AOS/a' (and '/Prj2_AOS/b'),
+   Enter the following command in each terminal:
+   $ ./c 
+   
+5. Because clients don't have the information of all three servers, but offered by M-server,
+   clients connect to M-server every time at the beginning.
+   (M-server and 3 servers' predefined port # are 6659, 6661, 6662, and 6663, respectively.)
+
+6. As long as the connection (Client-Master Server) is established, there will be instructions on how to:
+   1. Create a file;   2. Read a file;   3. Write to the EOF.
+   Just follow the steps.
+
+7. Once a job is done or fail, a corresponding message will be shown on the client's terminal.
+   Then the client closes the socket connection, but all servers are still listening.
+
+8. M-server can handle multiple (two, in this project) operations at the same time, except there is a "read-write" or write-any" conflict.
+
+9. Each client's operation has following three processes:
+	a. Connect to M-server, get a "Grant" or "Reject" information (based on whether conflict happens).
+	   If "Grant", continues. If "Reject", exist this operation and closes this socket.
+	b. With getting machine name and port number of one server (randomly chosen by M-server),
+	   the client will "create", "read", or "write" to the selected server.
+	c. Upon finishing step-b, the client start a new socket to the M-server, inform it to change the file's status as "closed".
+
+10. After each operation from a client, M-server check the files in a server (randomly selected, because servers never crash).
+    Then update its metadata, which can be printed on the M-server's screen.
+
+11. Any client may crash right after completion of step-a or b. M-server has capability on detecting this crash,
+    and set the status of the file, which is operated by this client, as "closed".
+
+
+
+----------------------------------------------------------------------------------------------------    
+Have "fun"!

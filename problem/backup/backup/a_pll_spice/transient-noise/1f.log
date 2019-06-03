@@ -1,0 +1,47 @@
+
+Circuit: * random noise test
+
+Error on line 17 : .fft v(1) v(2) v(3) v(4) v(5) v(6)
+ unimplemented control card - error 
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+No. of Data Columns : 3  
+32768 (2e15) one over f values created
+32768 (2e15) one over f values created
+32768 (2e15) one over f values created
+32768 (2e15) one over f values created
+32768 (2e15) one over f values created
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+1                                            0
+2                                            0
+3                                            0
+4                                            0
+5                                            0
+6                                            0
+vnoi6#branch                                 0
+vnoi5#branch                                 0
+vnoi4#branch                                 0
+vnoi3#branch                                 0
+vnoi2#branch                                 0
+vnoi1#branch                                 0
+
+
+No. of Data Rows : 110310
+elapsed time since last call: 2.782 seconds.
+
+Total elapsed time: 2.782 seconds.
+
+Total DRAM available = 2012.175781 MB.
+DRAM currently available = 184.316406 MB.
+Total ngspice program size = 5.490234 MB.
+Resident set size = 1.001953 MB.
+Shared ngspice pages = 507.000 kB.
+Text (code) pages = 963.000 kB.
+Stack = 0 bytes.
+Library pages = 3.416992 MB.
+

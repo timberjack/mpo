@@ -1,0 +1,11 @@
+0. ngspice is much SLOWER!!!
+1. First line must be starting with *
+2. transient analysis is ".tran" in ngspice, but ".trans" in HSPICE
+3. When instantiating sub-circuit, there is no "/" before subckt's name
+4. ngspice has interactive mode by adding:
+	.control
+	run
+	set filetype=ascii
+	plot v(x)
+	.endc
+5. 

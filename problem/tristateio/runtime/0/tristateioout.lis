@@ -1,0 +1,62 @@
+ ****** HSPICE -- D-2010.03 64-BIT (Feb 23 2010) linux ******                   
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: runtime/0/trival.sp                                               
+ lic: No 'setenv LM_LICENSE_FILE' in current environment' 
+ lic:  
+ lic: FLEXlm: v8.5b 
+ lic: USER:   timber30             HOSTNAME: ubuntu 
+ lic: HOSTID:                      PID:      49094 
+ lic: Using FLEXlm license file: 
+ lic: /usr/local/flexlm/licenses/license.dat 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+ lic: NODE LOCKED license on hostid  
+ lic:   
+1****** HSPICE -- D-2010.03 64-BIT (Feb 23 2010) linux ******                   
+ ******  
+ *tri-state i/o optimization
+
+  ******  circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             buff               1.00 
+        2 x2.                             buff               1.00 
+
+**warning**:NO.   3 tran analysis statement is duplicate, ignored!
+  **info** (runtime/0/trival.sp:38) DC voltage reset to initial transient source value              in source        0:vin                 new dc=  0.0000D+00
+ 
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 15
+ file=runtime/0/tristateioout.pa0                                              
+
+1****** HSPICE -- D-2010.03 64-BIT (Feb 23 2010) linux ******                   
+ ******  
+ *tri-state i/o optimization
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:data    =   0.      0:databar =   5.0000  0:enb     =   5.0000 
+ +0:lgnd    =   0.      0:lvcc    =   5.0000  0:out     =   5.0000 
+ +0:outbar  =  89.9525p 0:vcc     =   5.0000  1:bus     = 722.5200p
+ +1:datan   =   5.0000  1:enbn    =   6.3043n 1:nen     = 335.8386p
+ +1:nenn    =   5.0000  1:pen     = 262.4619p 1:penn    =   5.0000 
+ +2:bus     =   5.0000  2:datan   =   6.3043n 2:enbn    =   6.3043n
+ +2:nen     =   5.0000  2:nenn    =   3.5411n 2:pen     =   5.0000 
+ +2:penn    =   2.3344n
+
+ ******  
+ *tri-state i/o optimization
+

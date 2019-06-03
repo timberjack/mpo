@@ -1,0 +1,33 @@
+* "simulator" "HSPICE" 
+* "version" "C-2009.09 32-BIT"
+* "format" "HSP"
+* "rundate" "01:21:01 05/07/2019 "
+* "netlist" "rvco_test.sp "
+* "runtitle" "*inverter based oscillator"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ in = 9.455e-07       
++ in1 =   1.1999        
++ in2 = 1.602e-06       
++ in3 =   1.1999        
++ in4 = 1.602e-06       
++ in5 =   1.1999        
++ in6 = 1.602e-06       
++ in7 =   1.1999        
++ in8 = 1.602e-06       
++ vc =   1.1000        
++ vdd =   1.2000        
++ x1.c = 1.727e-05       
++ x2.c = 8.255e-07       
++ x3.c = 1.727e-05       
++ x4.c = 8.255e-07       
++ x5.c = 1.727e-05       
++ x6.c = 8.255e-07       
++ x7.c = 1.727e-05       
++ x8.c = 8.255e-07       
++ x9.c = 5.132e-10       
+***   END: Saved Operating Point ***                     

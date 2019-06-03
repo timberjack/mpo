@@ -1,0 +1,3 @@
+*cost: 0.0015942
+para:  BIAS 1.9 ||  LM 5e-06 ||  WM1 4.9e-05 ||  WM5 2.7e-05 ||  WM6 3e-05 ||  WM7 4e-05 || 
+meas:  area_min= 1.465e-09 ||  delayf= 7.3653e-08 ||  delayr= 8.4348e-08 ||  tot_power= 0.0015942 || 

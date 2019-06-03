@@ -1,0 +1,21 @@
+# Flow #
+Netlist name:amp.sp
+Output file name:ampout
+#
+
+# Parameters #
+Width M1:#WM1#:60u:20u:100u:1u:OPT
+Width M5:#WM5#:40u:20u:100u:1u:OPT
+Width M6:#WM6#:300u:20u:500u:1u:OPT
+Width M7:#WM7#:70u:40u:200u:1u:OPT
+Length group:#LM#:10u:2u:100u:1u:OPT
+Bias:#BIAS#:2.2:1.2:3.0:0.1:OPT
+#
+
+# Measurements #
+:delayr=:1:LE:100n
+:delayf=:1:LE:100n
+:tot_power=:1:MIN:---
+:area_min=:1:MIN:---
+#
+

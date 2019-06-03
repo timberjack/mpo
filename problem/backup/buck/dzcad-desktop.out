@@ -1,0 +1,170 @@
+
+Circuit: 
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vx                                 2.10167e-06
+vgp                                        3.3
+vin                                        3.3
+vgn                                        3.3
+vo                                 2.10167e-06
+net34                                  3.03105
+vdd                                        3.3
+xi8.net8                              0.601014
+xi8.net1                            0.00126809
+net50                                      1.2
+xi8.net5                              0.477634
+net80                              2.10167e-06
+xi8.net67                                  3.3
+xi8.net23                               2.7217
+veao                                       3.3
+xi8.net52                              2.08213
+net81                              2.10167e-06
+xi3.net37                                  3.3
+xi3.net48                           0.00594141
+reset                              2.58819e-07
+xi3.net52                           0.00549505
+xi3.net44                              3.29999
+net32                                  2.90678
+net12                                        0
+xi3.net63                                  3.3
+xi5.net11                          2.47608e-07
+xi5.net7                                   3.3
+xi5.net21                                  3.3
+xi5.xi4.net17                      1.23804e-07
+xi5.net25                                  3.3
+xi5.xi3.net17                          3.05638
+pwm                                        3.3
+net49                                        0
+xi7.net73                                  3.3
+xi7.xi7.net14                      2.47611e-07
+xi7.xi7.xi2.net17                  1.23805e-07
+xi7.net99                              3.05801
+xi7.net35                          6.30452e-07
+xi7.net39                                  3.3
+xi7.net12                          2.21304e-07
+xi7.net93                          3.15226e-07
+xi7.net96                                  3.3
+xi7.net92                             0.240911
+xi6.net73                                  3.3
+xi6.xi7.net8                       3.44415e-08
+xi6.xi7.xi2.net17                      3.25671
+xi6.net99                              3.05801
+xi6.net35                          6.30452e-07
+xi6.net39                                  3.3
+xi6.net12                          2.21304e-07
+xi6.net93                          3.15226e-07
+xi6.net96                                  3.3
+xi6.net92                             0.240911
+l0#branch                          8.40669e-08
+vclk#branch                                  0
+vramp#branch                                 0
+vref#branch                                  0
+vdd#branch                        -8.82835e-05
+vin#branch                        -0.000912844
+
+
+No. of Data Rows : 19046
+
+  Measurements for Transient Analysis
+
+zvo_average0        =  1.220809e+00 from=  1.200000e-04 to=  1.500000e-04
+zpeak_to_peak1      =  2.658474e-02 from=  1.200000e-04 to=  1.500000e-04
+zpeak_to_peak2      =  2.658474e-02 from=  1.200000e-04 to=  1.500000e-04
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vx                                 2.10167e-06
+vgp                                        3.3
+vin                                        3.3
+vgn                                        3.3
+vo                                 2.10167e-06
+net34                                  3.03105
+vdd                                        3.3
+xi8.net8                              0.601014
+xi8.net1                            0.00126809
+net50                                      1.2
+xi8.net5                              0.477634
+net80                              2.10167e-06
+xi8.net67                                  3.3
+xi8.net23                               2.7217
+veao                                       3.3
+xi8.net52                              2.08213
+net81                              2.10167e-06
+xi3.net37                                  3.3
+xi3.net48                           0.00594141
+reset                              2.58819e-07
+xi3.net52                           0.00549505
+xi3.net44                              3.29999
+net32                                  2.90678
+net12                                        0
+xi3.net63                                  3.3
+xi5.net11                          2.47608e-07
+xi5.net7                                   3.3
+xi5.net21                                  3.3
+xi5.xi4.net17                      1.23804e-07
+xi5.net25                                  3.3
+xi5.xi3.net17                          3.05638
+pwm                                        3.3
+net49                                        0
+xi7.net73                                  3.3
+xi7.xi7.net14                      2.47611e-07
+xi7.xi7.xi2.net17                  1.23805e-07
+xi7.net99                              3.05801
+xi7.net35                          6.30452e-07
+xi7.net39                                  3.3
+xi7.net12                          2.21304e-07
+xi7.net93                          3.15226e-07
+xi7.net96                                  3.3
+xi7.net92                             0.240911
+xi6.net73                                  3.3
+xi6.xi7.net8                       3.44415e-08
+xi6.xi7.xi2.net17                      3.25671
+xi6.net99                              3.05801
+xi6.net35                          6.30452e-07
+xi6.net39                                  3.3
+xi6.net12                          2.21304e-07
+xi6.net93                          3.15226e-07
+xi6.net96                                  3.3
+xi6.net92                             0.240911
+l0#branch                          8.40669e-08
+vclk#branch                                  0
+vramp#branch                                 0
+vref#branch                                  0
+vdd#branch                        -8.82835e-05
+vin#branch                        -0.000912844
+
+
+No. of Data Rows : 19046
+
+  Measurements for Transient Analysis
+
+zvo_average0        =  1.220809e+00 from=  1.200000e-04 to=  1.500000e-04
+zpeak_to_peak1      =  2.658474e-02 from=  1.200000e-04 to=  1.500000e-04
+zpeak_to_peak2      =  2.658474e-02 from=  1.200000e-04 to=  1.500000e-04
+
+CPU time since last call: 75.056 seconds.
+
+Total CPU time: 75.056 seconds.
+
+Total DRAM available = 4021.433594 MB.
+DRAM currently available = 3473.890625 MB.
+Total ngspice program size = 8.422852 MB.
+Resident set size = 4.009766 MB.
+Shared ngspice pages = 592.000 kB.
+Text (code) pages = 974.000 kB.
+Stack = 0 bytes.
+Library pages = 6.336914 MB.
+

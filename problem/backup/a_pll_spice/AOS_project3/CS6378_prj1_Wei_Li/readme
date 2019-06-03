@@ -1,0 +1,44 @@
+/* "Single client" - "three servers" in UTD (net01, net02, ..., net45) domain using TCP connection */
+/* By Wei Li, wxl069100@utdallas.edu */
+/* Acknowledgement: http://www.linuxhowtos.org/C_C++/socket.htm 
+                    Xiaoyu Liang, Ohio University, Ph.D. candidate
+                    Zheng Gao, Univ. of Texas Dallas, Ph.D. candidate
+                    Binh Nguyen, Univ. of Texas Dallas, Ph.D. candidate */
+
+
+
+Getting Started
+----------------------------------------------------------------------------------------------------
+In directory '/src', there are the source files to get you started.
+Three server codes are nearly the same, except port number defination. The last code is client.
+All object files are in the other directory '/Prj1_AOS'.
+
+
+
+Running the program
+----------------------------------------------------------------------------------------------------
+1. Copy directory '/Prj1_AOS' to any place under home directory.
+
+2. Open a terminal, ssh to net11, go to '/Prj1_AOS/s1', Enter the following command:
+   $ ./server
+   
+3. Open a terminal, ssh to net11, go to '/Prj1_AOS/s2', Enter the following command:
+   $ ./server
+   
+4. Open a terminal, ssh to net11, go to '/Prj1_AOS/s3', Enter the following command:
+   $ ./server 
+   
+5. Open a terminal, ssh to netxx, go to '/Prj1_AOS/c', Enter the following command:
+   $ ./client net1x abcd
+   (x here must be 1, 2, or 3. abcd can be 6658, 6660, 6662, which are predefined port numbers.)
+
+6. As long as the connection is established, there will be instructions on how to
+   1.Create a file;   2.Read a file;   3.Write to the EOF.
+   Just follow the steps.
+
+7. Once a job is done or fail, a corresponding message will be shown on the client's terminal.
+   Then the client quit the connection, but servers are still listening.
+
+
+----------------------------------------------------------------------------------------------------    
+Have "fun"!

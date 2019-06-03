@@ -1,0 +1,48 @@
+# Flow #
+Netlist name:amp3.sp
+Output file name:ampout
+#
+
+
+
+
+# Parameters #
+Supply voltage:#VSUPPLY#:3:2.4:3.3:0.1:---
+Minimal gate length:#LMIN#:0.35u:0.25u:0.5u:0.1u:---
+Load capacitance:#CLOAD#:100p:100p:130p:1p:---
+Load resistance:#RLOAD#:25k:10k:50k:1k:---
+Bias voltage:#VBIAS#:1.25:1:3:0.1:OPT
+Bias current:#IBIAS#:5u:1u:10u:0.1u:OPT
+C compensation 1:#CC1#:15p:2p:20p:1p:OPT
+C compensation 2:#CC2#:3p:2p:20p:1p:OPT
+Length group 1:#LM1#:0.7u:0.35u:7u:0.01u:OPT
+Length group 2:#LM2#:0.7u:0.35u:7u:0.01u:OPT
+Length group 3:#LM3#:0.7u:0.35u:7u:0.01u:OPT
+Length group 4:#LM4#:0.7u:0.35u:7u:0.01u:OPT
+Length group 5:#LM5#:0.7u:0.35u:7u:0.01u:OPT
+Length group 6:#LM6#:0.7u:0.35u:7u:0.01u:OPT
+Length group 7:#LM7#:0.5u:0.35u:7u:0.01u:OPT
+Width M00_10:#WM00_10#:10u:0.35u:50u:0.01u:OPT
+Width M11_12:#WM11_12#:40u:0.35u:50u:0.01u:OPT
+Width M13+16:#WM13_16#:10u:0.35u:50u:0.01u:OPT
+Width M14_17:#WM14_17#:6u:0.35u:50u:0.01u:OPT
+Width M15_18:#WM15_18#:11.01u:0.35u:50u:0.01u:OPT
+Width M20:#WM20#:15u:0.35u:50u:0.01u:OPT
+Width M22:#WM22#:10u:0.35u:50u:0.01u:OPT
+Width M21_23:#WM21_23#:2u:0.35u:50u:0.01u:OPT
+Width M30:#WM30#:1.5u:0.35u:50u:0.01u:OPT
+Width M31:#WM31#:1.5u:0.35u:50u:0.01u:OPT
+#
+
+
+
+
+# Measurements #
+AC_POWER:ac_power=:---:MIN:---
+dc_gain:dc_gain=:1:GE:122
+phase_margin:zpm=:1:GL:51.8:70
+amp3_slew_rate:zsr=:1:GE:0.777M
+unity_gain_frequency:zugf=:1:GE:3.15M
+#
+
+

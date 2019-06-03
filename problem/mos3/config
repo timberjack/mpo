@@ -1,0 +1,18 @@
+# Flow #
+Netlist name:mos3.sp
+Output file name:mos3out
+#
+
+# Parameters #
+:#vto#:1:0.5:2:0.001:OPT
+:#gamma#:0.8:0.1:2:0.001:OPT
+:#uo#:480:400:1000:0.1:OPT
+:#vmax#:2e5:5e4:5e7:0.1:OPT
+:#theta#:0.05:1e-3:1:0.0001:OPT
+:#kappa#:2:1e-2:5:0.001:OPT
+#
+
+# Measurements #
+:comp1=:1:MIN:---
+#
+

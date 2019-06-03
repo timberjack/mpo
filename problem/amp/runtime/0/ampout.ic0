@@ -1,0 +1,27 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03 64-BIT"
+* "format" "HSP"
+* "rundate" "05:18:19 06/02/2019 "
+* "netlist" "runtime/0/trival.sp "
+* "runtitle" "*amp.sp mos operational amplifier optimization"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ 1000 =  20.0720n       
++ vbias =   1.8000        
++ vin+ =   2.4900        
++ vin- =   2.5000        
++ vinbar+ =   2.5100        
++ voutf =   4.9753        
++ voutr = 113.4115n       
++ vsupply =   5.0000        
++ xrise.2 =   3.1066        
++ xrise.3 = 735.7069m       
++ xrise.4 =   4.3202        
++ xfall.2 =   3.1150        
++ xfall.3 = 741.0438m       
++ xfall.4 =   1.1837        
+***   END: Saved Operating Point ***                     

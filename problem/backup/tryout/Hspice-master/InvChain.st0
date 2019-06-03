@@ -1,0 +1,38 @@
+***** HSPICE -- D-2010.03 64-BIT (Feb 23 2010) linux ******
+ Input File: InvChain.sp
+ lic: No 'setenv LM_LICENSE_FILE' in current environment'
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   timber30             HOSTNAME: ubuntu
+ lic: HOSTID:                      PID:      58645
+ lic: Using FLEXlm license file:
+ lic: /usr/local/flexlm/licenses/license.dat
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9
+ lic: NODE LOCKED license on hostid
+ lic:
+ init: begin read circuit files,  cpu clock=  0.00E+00
+       option measfo   =     3.00
+       option post
+ init: end read circuit files,  cpu clock=  0.00E+00 memory=       150 kb
+ init: begin check errors,  cpu clock=  0.00E+00
+ init: end check errors,  cpu clock=  0.00E+00 memory=       150 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  0.00E+00
+       establish matrix -- done,  cpu clock=  0.00E+00 memory=       151 kb
+       re-order matrix -- done,  cpu clock=  0.00E+00 memory=       151 kb
+ init: end setup matrix,  cpu clock=  0.00E+00 memory=       162 kb
+ dcop: begin dcop,  cpu clock=  0.00E+00
+ dcop: end dcop,  cpu clock=  0.00E+00 memory=       162 kb  tot_iter=       3
+ output: InvChain.mt0
+ sweep: tran tran0    begin, stop_t=  4.00E-08 #sweeps=  41 cpu clock=  0.00E+00
+ tran: time= 8.3964E-09 tot_iter=      23 conv_iter=      11 cpu clock= 0.00E+00
+ tran: time= 1.3396E-08 tot_iter=      25 conv_iter=      12 cpu clock= 0.00E+00
+ tran: time= 1.8396E-08 tot_iter=      27 conv_iter=      13 cpu clock= 0.00E+00
+ tran: time= 2.0000E-08 tot_iter=      30 conv_iter=      14 cpu clock= 0.00E+00
+ tran: time= 2.8049E-08 tot_iter=      37 conv_iter=      17 cpu clock= 0.00E+00
+ tran: time= 3.3049E-08 tot_iter=      40 conv_iter=      18 cpu clock= 0.00E+00
+ tran: time= 3.8049E-08 tot_iter=      42 conv_iter=      19 cpu clock= 0.00E+00
+ tran: time= 4.0000E-08 tot_iter=      44 conv_iter=      20 cpu clock= 0.00E+00
+ sweep: tran tran0    end,  cpu clock=  0.00E+00 memory=       162 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

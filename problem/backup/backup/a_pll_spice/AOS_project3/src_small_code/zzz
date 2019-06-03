@@ -1,0 +1,8 @@
+str:
+
+[0][0]: function
+0-invalid, 1-create, 2-read, 3-write, 4-travelsal diretory(servers)/close file(M-serrve) 5-Off_load data
+
+[0][1]: server-1's reply  \ when "create": 0-not connected, 1-sucuss, 2-fail(exiting)
+[0][2]: server-2's reply -- when "read": 0-not connected, 1-sucuss, 2-fail(not exit), 3-inconsistent
+[0][3]: server-3's reply  / when "write": 0-not connected, 1-sucuss,

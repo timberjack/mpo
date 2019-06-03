@@ -1,0 +1,93 @@
+ ****** HSPICE -- C-2009.09 32-BIT (Aug 24 2009) linux ******                   
+  Copyright (C) 2009 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: buck.sp                                                           
+ lic:  
+ lic: FLEXlm: v8.5b 
+ lic: USER:   dzcad                HOSTNAME: dzcad-desktop1 
+ lic: HOSTID:                      PID:      3123 
+ lic: Using FLEXlm license file: 
+ lic: 27000@dzcad-desktop1 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2020.12 
+ lic: NODE LOCKED license on hostid  
+ lic:   
+ Init: read install configuration file: /usr/synopsys/SPICE-2009.09/hspice/meta.cfg
+ (buck.sp:124)
+ **warning** unknown command ".control" is ignored
+ (buck.sp:125)
+ **warning**  unknown command name is ignored
+ (buck.sp:125)
+ **warning** the element "run" declared without nodes and value. Please enter valid nodes with corresponding value.
+ (buck.sp:127)
+ **warning** unknown command ".endc" is ignored
+ (buck.sp:128)
+ **warning**  unknown command name is ignored
+
+ **warning**  unknown option sim_ac  
+
+
+ **warning**  unknown option filety  
+
+  **error** (buck.sp:126) number of conductors (N) parameter not found, for W element .Please define value of N.
+  **error** (buck.sp:126) difficulty in reading input
+
+          ***** job aborted
+1****** HSPICE -- C-2009.09 32-BIT (Aug 24 2009) linux ******                   
+ ******  
+ 
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+ 
+ 
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz
+ cpu MHz	: 2301.000
+ 
+ OS:
+ Linux version 2.6.32-74-generic-pae (buildd@allspice) (gcc version 4.4.3 (Ubunt
+ u 4.4.3-4ubuntu5.1) ) #142-Ubuntu SMP Tue Apr 28 10:17:31 UTC 2015
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     2
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =       0 # elements   =      16
+  # resistors   =       3 # capacitors =       3 # inductors   =       1
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       5
+  # curr_srcs   =       2 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       2 # U elements  =       0
+  # T elements  =       0 # W elements =       1 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  readin             0.01
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           total memory used          289  kbytes
+           total cpu time            0.01 seconds
+           total elapsed time        0.20 seconds
+           job started at     17:43:49 05/29/2019
+           job ended   at     17:43:50 05/29/2019
+
+
+ lic: Release hspice token(s) 

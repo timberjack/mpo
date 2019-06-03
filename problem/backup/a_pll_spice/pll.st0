@@ -1,0 +1,13 @@
+***** HSPICE -- C-2009.09 32-BIT (Aug 24 2009) linux ******
+ Input File: pll.sp
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   dzcad                HOSTNAME: dzcad-desktop1
+ lic: HOSTID:                      PID:      17660
+ lic: Using FLEXlm license file:
+ lic: 27000@dzcad-desktop1
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2020.12
+ lic: NODE LOCKED license on hostid
+ lic:
+ lic: Release hspice token(s)

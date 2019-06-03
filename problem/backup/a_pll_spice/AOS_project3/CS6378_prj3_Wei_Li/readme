@@ -1,0 +1,92 @@
+/* "Two clients - Master server - four servers" in UTD (net01, net02, ..., net45) domain using TCP connection */
+/* By Wei Li, wxl069100@utdallas.edu */
+/* Acknowledgement: http://www.linuxhowtos.org/C_C++/socket.htm */
+
+
+
+Getting Started
+----------------------------------------------------------------------------------------------------
+One copy of source codes are in the directory '/src'.
+Four servers' codes are nearly the same, except port number definition. Also the same to the two clients, except their ID.
+Binary files can be created by compiling the source codes in the subdirectories under '/Prj2_AOS', which are:
+'/1', '/2', '/3', '/4', '/a', '/b', and '/m'.
+The first four are servers. The next two have those two clients. The last one '/m' has M-server.
+To compiling the source codes, do "make" at the project home directory:
+$ make
+makefile as:
+all:
+	gcc ./m/mserver_wl.c -o ./m/m
+	gcc ./1/1server_wl.c -o ./1/s -lpthread
+	gcc ./2/2server_wl.c -o ./2/s -lpthread
+	gcc ./3/3server_wl.c -o ./3/s -lpthread
+	gcc ./4/4server_wl.c -o ./4/s -lpthread
+	gcc ./a/aclient_wl.c -o ./a/c
+	gcc ./b/bclient_wl.c -o ./b/c
+
+
+Running the program
+----------------------------------------------------------------------------------------------------
+1. Copy directory '/Prj2_AOS' to any place under home directory.
+
+2. Open three terminals, ssh to net31-34, go to '/Prj2_AOS/1' (then '/Prj2_AOS/2', '/Prj2_AOS/3', and '/Prj2_AOS/4'),
+   Enter the following command in each terminal:
+   $ ./s
+   
+3. Open the 4th terminal, ssh to net19, go to '/Prj1_AOS/m', Enter the following command:
+   $ ./m
+   
+4. Open another two terminals, ssh to any two of netxx, go to '/Prj2_AOS/a' (and '/Prj2_AOS/b'),
+   Enter the following command in each terminal:
+   $ ./c 
+   
+5. Because clients don't have the information of all three servers, but offered by M-server,
+   clients connect to M-server every time at the beginning.
+   (M-server and four servers' predefined port # are 6659, 6661, 6662, 6663, and 6664, respectively.)
+
+6. As long as the connection (Client-Master Server) is established, there will be instructions on how to:
+   1. Create a file;   2. Read a file;   3. Write to the EOF.
+   Just follow the steps.
+
+7. Once a job is done or fail, a corresponding message will be shown on the client's terminal.
+   Then the client closes the socket connection, but all servers are still listening.
+
+8. M-server can handle multiple (two, in this project) operations at the same time, except there is a "read-write" or write-any" conflict.
+
+9. Each client's operation has following three processes:
+	a. Connect to M-server, get a "Grant" or "Reject" information (based on whether conflict happens).
+	   If "Grant", continues. If "Reject", exist this operation and closes this socket.
+	b. With getting machine names and port numbers of all three servers,
+	   the client will "create", "read", or "write" to the selected servers.
+	c. Upon finishing step-b, the client start a new socket to the M-server, inform it to change the file's status as "closed".
+
+10. After each operation from a client, M-server check the files in a server (randomly selected, because servers never crash).
+    Then update its metadata, which can be printed on the M-server's screen.
+
+11. Any client may crash right after completion of step-9.a or 9.b. M-server has capability on detecting this crash,
+    and set the status of the file, which is operated by this client, as "closed".
+
+12. Open the last terminals, ssh to one of net31-34, go to '/Prj2_AOS/1' (or one of '/Prj2_AOS/2', '/Prj2_AOS/3', '/Prj2_AOS/4'),
+    Enter the following command in each terminal:
+    $ ./s
+
+13. Any previously existing file-servers (those three) can off-load one of its files and transfer to new file-server
+	(or say, the only server doesn't have the file). This can be done under instruction of server interface, and input by std_input.
+	The last server can also off-load its file, as long as it has the file which user wants to off-load.
+
+14. In any file-server, user can see the files it holds by using "ctrl+z".
+	Whether this file is succussfully off-loaded or not will be given on the screeen.
+	If this file is in read/write by a client, it cannot be off-load. Then the server will delay this off-load, and keep trying, until succuss.
+
+15. Normal operations by clients - Read/ Write on all file-servers (all four).
+	Upon receiving read/write operation from any client, m-server can verify which file-servers have the file.
+	Upon receiving create operation, if the file does not exit in file system, m-server randomly choose three servers to let the client access.
+
+16. M-server can crash any time it want by "ctrl+c", and restart itself at the same machine.
+	Right after crashing, M-server loses all data immediately. 
+	If crashing happens after step 9.a, the client (or a server wants to off-load) can still finish its operation. Otherwise, no operation can be done.
+	After recovery from crash, everything remains the same as normal.
+	
+
+----------------------------------------------------------------------------------------------------    
+Have "fun"!
+ 

@@ -1,0 +1,2 @@
+#gcc -I/usr/include -L/usr/lib -lsocket -lnsl client_wl.c -o client
+gcc -I/usr/include -L/usr/lib -lsocket -lnsl server_wl.c -o server 

@@ -1,0 +1,167 @@
+
+Circuit: *buck converter with adpll
+
+Model issue on line 3 : .model pfet pmos level=49 pu0=0 tox=3.35e-09 k1=0.262208 ...
+unrecognized parameter (nqsmod) - ignored
+unrecognized parameter (tlev) - ignored
+unrecognized parameter (tlevc) - ignored
+Model issue on line 4 : .model nfet nmos level=49 pu0=0 tox=3.12e-09 k1=0.416451 ...
+unrecognized parameter (nqsmod) - ignored
+unrecognized parameter (tlev) - ignored
+unrecognized parameter (tlevc) - ignored
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+x1.in1                              0.00408312
+vo                                         1.2
+vdd                                        1.2
+x1.x1.c                              0.0040812
+vc                                           0
+x1.in2                                 1.19998
+x1.x2.c                              0.0246803
+x1.in3                              0.00408612
+x1.x3.c                              0.0040842
+x1.in4                                 1.19998
+x1.x4.c                              0.0246817
+x1.in5                              0.00408612
+x1.x5.c                              0.0040842
+x1.in6                                 1.19998
+x1.x6.c                              0.0246817
+x1.in7                              0.00408612
+x1.x7.c                              0.0040842
+x1.in8                                 1.19998
+x1.x8.c                              0.0246817
+x1.in9                              0.00408612
+x1.x9.c                              0.0040842
+x1.in10                                1.19998
+x1.x10.c                             0.0246817
+x1.in11                             0.00408612
+x1.x11.c                             0.0040842
+x1.in12                                1.19998
+x1.x12.c                             0.0246817
+x1.in13                             0.00408612
+x1.x13.c                             0.0040842
+x1.in14                                1.19998
+x1.x14.c                             0.0246817
+x1.x15.c                               1.06433
+up                                 2.35639e-06
+x2.xdffup.1                                1.2
+ref                                          0
+x2.xdffup.xnor21.net14                     1.2
+x2.xdffup.2                         1.1848e-07
+x2.xdffup.xnor22.net14                0.247776
+x2.xdffup.3                                1.2
+x2.xdffup.xnor23.net14                 1.11456
+x2.reset                           1.81974e-06
+x2.xdffup.xnor24.net14                     1.2
+down                               4.16837e-06
+x2.xdffdn.1                        2.35625e-06
+x2.xdffdn.xnor21.net14                0.247778
+x2.xdffdn.2                                1.2
+x2.xdffdn.xnor22.net14                     1.2
+x2.xdffdn.3                        2.35638e-06
+x2.xdffdn.xnor23.net14                     1.2
+x2.xdffdn.xnor24.net14                0.247778
+x2.xnand2.inta                       0.0765019
+x2.resetb                                  1.2
+upb                                        1.2
+x3.1                                  0.485926
+x3.2                                  0.603132
+x3.p                                       1.2
+x3.n                               3.28465e-19
+x3.rc                                        0
+vref#branch                                  0
+vdd#branch                        -4.18944e-05
+
+
+No. of Data Rows : 102168
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+No. of Data Columns : 2  
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+x1.in1                              0.00408312
+vo                                         1.2
+vdd                                        1.2
+x1.x1.c                              0.0040812
+vc                                           0
+x1.in2                                 1.19998
+x1.x2.c                              0.0246803
+x1.in3                              0.00408612
+x1.x3.c                              0.0040842
+x1.in4                                 1.19998
+x1.x4.c                              0.0246817
+x1.in5                              0.00408612
+x1.x5.c                              0.0040842
+x1.in6                                 1.19998
+x1.x6.c                              0.0246817
+x1.in7                              0.00408612
+x1.x7.c                              0.0040842
+x1.in8                                 1.19998
+x1.x8.c                              0.0246817
+x1.in9                              0.00408612
+x1.x9.c                              0.0040842
+x1.in10                                1.19998
+x1.x10.c                             0.0246817
+x1.in11                             0.00408612
+x1.x11.c                             0.0040842
+x1.in12                                1.19998
+x1.x12.c                             0.0246817
+x1.in13                             0.00408612
+x1.x13.c                             0.0040842
+x1.in14                                1.19998
+x1.x14.c                             0.0246817
+x1.x15.c                               1.06433
+up                                 2.35639e-06
+x2.xdffup.1                                1.2
+ref                                          0
+x2.xdffup.xnor21.net14                     1.2
+x2.xdffup.2                         1.1848e-07
+x2.xdffup.xnor22.net14                0.247776
+x2.xdffup.3                                1.2
+x2.xdffup.xnor23.net14                 1.11456
+x2.reset                           1.81974e-06
+x2.xdffup.xnor24.net14                     1.2
+down                               4.16837e-06
+x2.xdffdn.1                        2.35625e-06
+x2.xdffdn.xnor21.net14                0.247778
+x2.xdffdn.2                                1.2
+x2.xdffdn.xnor22.net14                     1.2
+x2.xdffdn.3                        2.35638e-06
+x2.xdffdn.xnor23.net14                     1.2
+x2.xdffdn.xnor24.net14                0.247778
+x2.xnand2.inta                       0.0765019
+x2.resetb                                  1.2
+upb                                        1.2
+x3.1                                  0.485926
+x3.2                                  0.603132
+x3.p                                       1.2
+x3.n                               3.28465e-19
+x3.rc                                        0
+vref#branch                                  0
+vdd#branch                        -4.18944e-05
+
+
+No. of Data Rows : 102165
+elapsed time since last call: 206.696 seconds.
+
+Total elapsed time: 206.696 seconds.
+
+Total DRAM available = 2012.175781 MB.
+DRAM currently available = 159.496094 MB.
+Total ngspice program size = 18.657227 MB.
+Resident set size = 14.219727 MB.
+Shared ngspice pages = 554.000 kB.
+Text (code) pages = 963.000 kB.
+Stack = 0 bytes.
+Library pages = 16.583984 MB.
+

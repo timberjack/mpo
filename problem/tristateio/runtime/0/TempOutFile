@@ -1,0 +1,205 @@
+ ****** HSPICE -- D-2010.03 64-BIT (Feb 23 2010) linux ******                   
+  Copyright (C) 2010 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: runtime/0/trival.sp                                               
+ lic: No 'setenv LM_LICENSE_FILE' in current environment' 
+ lic:  
+ lic: FLEXlm: v8.5b 
+ lic: USER:   timber30             HOSTNAME: ubuntu 
+ lic: HOSTID:                      PID:      49078 
+ lic: Using FLEXlm license file: 
+ lic: /usr/local/flexlm/licenses/license.dat 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9 
+ lic: NODE LOCKED license on hostid  
+ lic:   
+1****** HSPICE -- D-2010.03 64-BIT (Feb 23 2010) linux ******                   
+ ******  
+ *tri-state i/o optimization
+
+  ******  circuit name directory
+ circuit number to circuit name directory
+   number circuitname                     definition         multiplier
+        0 main circuit
+        1 x1.                             buff               1.00 
+        2 x2.                             buff               1.00 
+
+**warning**:NO.   3 tran analysis statement is duplicate, ignored!
+  **info** (runtime/0/trival.sp:38) DC voltage reset to initial transient source value              in source        0:vin                 new dc=  0.0000D+00
+ 
+      
+ **info** set option symb=1 internally to help for convergence.
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+  Opening plot unit= 15
+ file=runtime/0/tristateioout.pa0                                              
+
+1****** HSPICE -- D-2010.03 64-BIT (Feb 23 2010) linux ******                   
+ ******  
+ *tri-state i/o optimization
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:data    =   0.      0:databar =   5.0000  0:enb     =   5.0000 
+ +0:lgnd    =   0.      0:lvcc    =   5.0000  0:out     =   5.0000 
+ +0:outbar  =  92.4080p 0:vcc     =   5.0000  1:bus     = 688.4453p
+ +1:datan   =   5.0000  1:enbn    =   6.3043n 1:nen     = 373.4331p
+ +1:nenn    =   5.0000  1:pen     = 258.9424p 1:penn    =   5.0000 
+ +2:bus     =   5.0000  2:datan   =   6.3043n 2:enbn    =   6.3043n
+ +2:nen     =   5.0000  2:nenn    =   3.6094n 2:pen     =   5.0000 
+ +2:penn    =   2.3332n
+
+ ******  
+ *tri-state i/o optimization
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+
+a
+
+
+ legend:
+
+  a: v(databar)
+  b: v(outbar)
+
+      time       v(databar)
+ (ab      )      -2.0000        0.            2.0000        4.0000       6.0000 
+                      +             +             +             +             + 
+    0.         5.000 -+------+------b------+------+------+------+------a------+-
+    1.0000n   22.558m +      +      2      +      +      +      +      +      + 
+    2.0000n   80.156m +      +      ba     +      +      +      +      +      + 
+    3.0000n  211.107m +      +      +2     +      +      +      +      +      + 
+    4.0000n  402.850m +      +      +  a b +      +      +      +      +      + 
+    5.0000n   85.834m +      +      +a     +      +b     +      +      +      + 
+    6.0000n -471.420m +      +   a  +      +      +      +    b +      +      + 
+    7.0000n -424.947m +      +   a  +      +      +      +      +     b+      + 
+    8.0000n  -42.087m +      +      a      +      +      +      +      + b    + 
+    9.0000n  184.670m +      +      +a     +      +      +      +      +b     + 
+   10.0000n   94.130m-+------+------+a-----+------+------+------+-----b+------+-
+   11.0000n  -53.195m +      +      a      +      +      +      +     b+      + 
+   12.0000n  -70.550m +      +      a      +      +      +      +      b      + 
+   13.0000n  -11.829m +      +      a      +      +      +      +      b      + 
+   14.0000n   26.563m +      +      a      +      +      +      +      b      + 
+   15.0000n   18.697m +      +      a      +      +      +      +      b      + 
+                      +             +             +             +             + 
+
+b
+
+
+     optimization  results
+
+          residual sum of squares     =  1.879633E-02
+          norm of the gradient        =  1.638235E-02
+          marquardt scaling parameter =   63.6813    
+          no. of function evaluations =       69
+          no. of iterations           =        7
+
+     optimization completed
+
+          measured results < relout=  1.0000E-03 on last iterations
+
+ **** optimized parameters opt1            
+*                                        %norm-sen        %change
+
+ .param wp2           =  30.0000u       $   38.5701n        -1.0000k      
+ .param wn2           = 149.7928u       $   65.5470n        89.9728       
+ .param wp3           = 100.0000u       $    1.8693n         0.           
+ .param wn3           =  80.2610u       $    0.              0.           
+ .param wp4           = 800.0000u       $   38.5701n        81.2500       
+ .param wn4           = 500.0000u       $   65.5470n        89.9728       
+ .param wp5           =   5.0000m       $    1.8693n         0.           
+ .param wn5           = 400.4758u       $    0.              0.           
+ .param wp10          = 450.0000u       $   38.5701n        66.6667       
+ .param wn10          =  77.6980u       $  100.0000       -293.6437n      
+ .param wp11          = 150.0000u       $   38.5701n      -200.0000       
+ ****
+
+1****** HSPICE -- D-2010.03 64-BIT (Feb 23 2010) linux ******                   
+ ******  
+ *tri-state i/o optimization
+
+  ******  operating point information tnom=  25.000 temp=  25.000 *****
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:data    =   0.      0:databar =   5.0000  0:enb     =   5.0000 
+ +0:lgnd    =   0.      0:lvcc    =   5.0000  0:out     =   5.0000 
+ +0:outbar  =  92.4080p 0:vcc     =   5.0000  1:bus     = 688.4454p
+ +1:datan   =   5.0000  1:enbn    =   6.3043n 1:nen     = 373.4331p
+ +1:nenn    =   5.0000  1:pen     = 258.9425p 1:penn    =   5.0000 
+ +2:bus     =   5.0000  2:datan   =   6.3043n 2:enbn    =   6.3043n
+ +2:nen     =   5.0000  2:nenn    =   5.4803n 2:pen     =   5.0000 
+ +2:penn    =   4.2041n
+
+ ******  
+ *tri-state i/o optimization
+
+  ******  transient analysis tnom=  25.000 temp=  25.000 *****
+   rmspowo=  2.3548E-01  from=  0.0000E+00     to=  1.5000E-08
+   tfopt=  4.9496E-09  targ=  5.2993E-09   trig=  3.4977E-10
+   tropt=  4.9079E-09  targ=  5.2581E-09   trig=  3.5023E-10
+
+          ***** job concluded
+1****** HSPICE -- D-2010.03 64-BIT (Feb 23 2010) linux ******                   
+ ******  
+ *tri-state i/o optimization
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+ 
+ 
+ ******  Machine Information  ******
+ CPU:
+ model name	: Intel(R) Core(TM) i7-3610QM CPU @ 2.30GHz
+ cpu MHz	: 2301.000
+ 
+ OS:
+ Linux version 4.18.0-20-generic (buildd@lcy01-amd64-020) (gcc version 7.3.0 (Ub
+ untu 7.3.0-16ubuntu3)) #21~18.04.1-Ubuntu SMP Wed May 8 08:43:37 UTC 2019
+
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count                  :     1
+  Available CPU Count                         :     4
+  Actual Model Evaluation(Load) Threads Count :     1
+  Actual Solver Threads Count                 :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      23 # elements   =      48
+  # resistors   =       0 # capacitors =       6 # inductors   =       2
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       0
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       4
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =      36 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.02           1         213
+  transient          0.45          16       10501        3037 rev=       170
+  readin             0.00
+  errchk             0.00
+  setup              0.00
+  output             0.00
+
+
+           total memory used                193 kbytes
+           total cpu time            0.48 seconds
+           total elapsed time        0.52 seconds
+           job started at     05:19:05 06/02/2019
+           job ended   at     05:19:05 06/02/2019
+
+
+ lic: Release hspice token(s) 

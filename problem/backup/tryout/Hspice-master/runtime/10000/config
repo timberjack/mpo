@@ -1,0 +1,15 @@
+# Flow #
+Netlist name:invchain.sp
+Output file name:invchainout
+#
+
+# Parameters #
+:#C1#:5p:0.1p:100p:0.01p:OPT
+:#WM1#:1.4u:0.1u:100u:0.001u:OPT
+:#LM1#:0.35u:0.01u:10u:0.01u:OPT
+:#AD1#:0.7p:0.1p:2p:0.01p"OPT
+#
+
+# Measurements #
+:tphl=:1:MIN:---
+#

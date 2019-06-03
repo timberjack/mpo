@@ -1,0 +1,19 @@
+# Flow #
+Netlist name:inv.sp
+Output file name:invout
+#
+
+# Parameters #
+Supply voltage:#V_SUPPLY#:2:1.8:3.3:0.1:---
+Input frequency:#INP_FREQ#:850E6:100E6:1000E6:1E6:OPT
+PMOS Width:#WP#:2u:1u:10u:1p:OPT
+Minimal gate length:#LMIN#:0.7u:0.35u:7u:0.01u:OPT
+#
+
+# Measurements #
+P_SUPPLY:---:MIN:0
+VHIGH:OUT:GE:1.95
+VLOW:OUT:LE:0.05
+#
+
+

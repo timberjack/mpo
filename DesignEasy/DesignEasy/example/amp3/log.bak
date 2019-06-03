@@ -1,0 +1,123 @@
+ 
+ *************************************************************************
+ * 
+ * DesignEasy CONFIDENTIAL
+ * __________________
+ * 
+ *  Copyright (C) 2019 DesignEasy Incorporated 
+ *  All Rights Reserved.
+ * 
+ * NOTICE:  All information contained herein is, and remains
+ * the property of DesignEasy Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to DesignEasy Incorporated
+ * and its suppliers and may be covered by China and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from DesignEasy Incorporated.
+ *
+ ************************************************************************
+
+ * warning: non-digit measurement from [zugf=] and the value is [failed]
+
+ * warning: non-digit measurement from [zsr=] and the value is [failed]
+
+ * warning: non-digit measurement from [zpm1=] and the value is [failed]
+
+ * warning: non-digit measurement from [zugf=] and the value is [failed]
+
+ * warning: non-digit measurement from [zsr=] and the value is [failed]
+
+ * warning: non-digit measurement from [zpm1=] and the value is [failed]
+
+ * warning: non-digit measurement from [zugf=] and the value is [failed]
+
+ * warning: non-digit measurement from [zsr=] and the value is [failed]
+
+ * warning: non-digit measurement from [zpm1=] and the value is [failed]
+
+ * warning: non-digit measurement from [zugf=] and the value is [failed]
+
+ * warning: non-digit measurement from [zsr=] and the value is [failed]
+
+ * warning: non-digit measurement from [zpm1=] and the value is [failed]
+
+ * warning: non-digit measurement from [zugf=] and the value is [failed]
+
+ * warning: non-digit measurement from [zsr=] and the value is [failed]
+
+ * warning: non-digit measurement from [zpm1=] and the value is [failed]
+
+ * warning: non-digit measurement from [zugf=] and the value is [failed]
+
+ * warning: non-digit measurement from [zsr=] and the value is [failed]
+
+ * warning: non-digit measurement from [zpm1=] and the value is [failed]
+
+ * warning: non-digit measurement from [zugf=] and the value is [failed]
+
+ * warning: non-digit measurement from [zsr=] and the value is [failed]
+
+ * warning: non-digit measurement from [zpm1=] and the value is [failed]
+
+ * warning: non-digit measurement from [zugf=] and the value is [failed]
+
+ * warning: non-digit measurement from [zsr=] and the value is [failed]
+
+ * warning: non-digit measurement from [zpm1=] and the value is [failed]
+
+ * warning: non-digit measurement from [zugf=] and the value is [failed]
+
+ * warning: non-digit measurement from [zsr=] and the value is [failed]
+
+ * warning: non-digit measurement from [zpm1=] and the value is [failed]
+
+ * warning: non-digit measurement from [zugf=] and the value is [failed]
+
+ * warning: non-digit measurement from [zsr=] and the value is [failed]
+
+ * warning: non-digit measurement from [zpm1=] and the value is [failed]
+mv: cannot stat ‘runtime/10000/TempOutfile’: No such file or directory
+
+ ************************************************************************
+ * ****************** Summary of Optimization ***************************
+ ************************************************************************
+ * total number of simulations: 2001
+ * CPU run time is: 0h 5m 47s 
+ * ****************** Best measurements *********************************
+ ac_power= 0.0006941
+ dc_gain= 139.14
+ zpm1= 51.827
+ zsr= 1.0247e+07
+ zugf= 3.2634e+06
+ * ****************** Best Parameters ***********************************
+ CC1 1.2e-11
+ CC2 5e-12
+ CLOAD 1e-10
+ IBIAS 6.8e-06
+ LM1 3.54e-06
+ LM2 2.02e-06
+ LM3 3.85e-06
+ LM4 4.37e-06
+ LM5 4.95e-06
+ LM6 3.5e-07
+ LM7 1.46e-06
+ LMIN 3.5e-07
+ RLOAD 25000
+ VBIAS 1.8
+ VSUPPLY 3
+ WM00_10 3.189e-05
+ WM11_12 3.882e-05
+ WM13_16 1.418e-05
+ WM14_17 3.66e-05
+ WM15_18 3.551e-05
+ WM20 3.609e-05
+ WM21_23 1.436e-05
+ WM22 4.171e-05
+ WM30 3.681e-05
+ WM31 3.582e-05
+ ************************************************************************
+ * Please check results from OPT* files.
+ * Thanks for using DesignEasy!
+ ************************************************************************

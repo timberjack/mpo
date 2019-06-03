@@ -1,0 +1,35 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03 64-BIT"
+* "format" "HSP"
+* "rundate" "05:19:05 06/02/2019 "
+* "netlist" "runtime/0/trival.sp "
+* "runtitle" "*tri-state i/o optimization"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ data =   0.            
++ databar =   5.0000        
++ enb =   5.0000        
++ lgnd =   0.            
++ lvcc =   5.0000        
++ out =   5.0000        
++ outbar =  89.9525p       
++ vcc =   5.0000        
++ x1.bus = 722.5200p       
++ x1.datan =   5.0000        
++ x1.enbn =   6.3043n       
++ x1.nen = 335.8386p       
++ x1.nenn =   5.0000        
++ x1.pen = 262.4619p       
++ x1.penn =   5.0000        
++ x2.bus =   5.0000        
++ x2.datan =   6.3043n       
++ x2.enbn =   6.3043n       
++ x2.nen =   5.0000        
++ x2.nenn =   3.5411n       
++ x2.pen =   5.0000        
++ x2.penn =   2.3344n       
+***   END: Saved Operating Point ***                     

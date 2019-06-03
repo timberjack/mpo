@@ -1,0 +1,28 @@
+* "simulator" "HSPICE" 
+* "version" "G-2012.06-SP1 64-BIT"
+* "format" "HSP"
+* "rundate" "14:29:10 05/07/2019 "
+* "netlist" "runtime/1/trival.sp "
+* "runtitle" "*three stage operational amplifier"
+* time =  0.000e+00       
+* temperature =  2.500e+01       
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ ibias = 2.144e+00       
++ vb1 = 2.200e+00       
++ vdd = 3.000e+00       
++ vn = 1.503e+00       
++ vout = 1.503e+00       
++ vp = 1.500e+00       
++ vss = 0.000e+00       
++ vx = 1.500e+00       
++ xopamp.1 = 2.370e+00       
++ xopamp.2 = 8.215e-01       
++ xopamp.3 = 1.038e+00       
++ xopamp.4 = 9.087e-01       
++ xopamp.5 = 2.138e+00       
++ xopamp.6 = 7.141e-01       
++ xopamp.7 = 1.123e+00       
+***   END: Saved Operating Point ***                     

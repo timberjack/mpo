@@ -1,0 +1,17 @@
+* "simulator" "HSPICE" 
+* "version" "D-2010.03 64-BIT"
+* "format" "HSP"
+* "rundate" "15:45:29 05/31/2019 "
+* "netlist" "trival.sp "
+* "runtitle" "*digital inverter"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ in =   3.0000        
++ out =   1.5011        
++ vdd =   3.0000        
++ vss =   0.            
+***   END: Saved Operating Point ***                     

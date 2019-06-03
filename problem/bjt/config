@@ -1,0 +1,28 @@
+# Flow #
+Netlist name:bjt.sp
+Output file name:bjtout
+#
+
+# Parameters #
+LBB:#LBB#:100p:1p:10n:1p:OPT
+LCC:#LCC#:100p:1p:10n:1p:OPT
+LEE:#LEE#:100p:1p:10n:1p:OPT
+TF:#TF#:1n:5p:5n:1p:OPT
+CBE:#CBE#:0.5p:0.1p:5p:0.01p:OPT
+CBC:#CBC#:0.4p:0.1p:5p:0.01p:OPT
+RB:#RB#:10:1:300:0.1:OPT
+RE:#RE#:0.4:0.01:5:0.01:OPT
+RC:#RC#:10:0.1:100:0.01:OPT
+IS:#IS#:1e-15:1e-16:1e-10:1e-16:OPT
+#
+
+# Measurements #
+:comp1=:1:MIN:---
+:comp2=:1:MIN:---
+:comp3=:1:MIN:---
+:comp4=:1:MIN:---
+:comp5=:1:MIN:---
+:comp6=:1:MIN:---
+:comp7=:1:MIN:---
+#
+

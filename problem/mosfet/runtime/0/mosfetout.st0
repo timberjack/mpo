@@ -1,0 +1,34 @@
+***** HSPICE -- D-2010.03 64-BIT (Feb 23 2010) linux ******
+ Input File: runtime/0/trival.sp
+ lic: No 'setenv LM_LICENSE_FILE' in current environment'
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   timber30             HOSTNAME: ubuntu
+ lic: HOSTID:                      PID:      33053
+ lic: Using FLEXlm license file:
+ lic: /usr/local/flexlm/licenses/license.dat
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9
+ lic: NODE LOCKED license on hostid
+ lic:
+ init: begin read circuit files,  cpu clock=  0.00E+00
+       option nomod
+       option post     =     2.00
+       option newtol
+       option relmos   =    1.000E-05
+       option absmos   =    1.000E-08
+ init: end read circuit files,  cpu clock=  0.00E+00 memory=       150 kb
+ init: begin check errors,  cpu clock=  0.00E+00
+ init: end check errors,  cpu clock=  0.00E+00 memory=       151 kb
+ init: begin setup matrix, pivot=     0 cpu clock=  0.00E+00
+       establish matrix -- done,  cpu clock=  0.00E+00 memory=       152 kb
+       re-order matrix -- done,  cpu clock=  0.00E+00 memory=       152 kb
+ init: end setup matrix,  cpu clock=  0.00E+00 memory=       161 kb
+ output: runtime/0/mosfetout.ms0
+ sweep: dc dc0    begin, #sweeps=   2 cpu clock=  0.00E+00
+ sweep: dc dc0    end,  cpu clock=  0.00E+00 memory=       161 kb
+ output: runtime/0/mosfetout.ms1
+ sweep: dc dc0    begin, #sweeps=   2 cpu clock=  0.00E+00
+ sweep: dc dc0    end,  cpu clock=  0.00E+00 memory=       161 kb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

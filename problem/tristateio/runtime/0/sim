@@ -1,0 +1,3 @@
+# 
+hspice64 runtime/0/trival.sp -o runtime/0/tristateioout > /dev/null 2>&1 
+mv runtime/0/tristateioout.lis runtime/0/tristateioout 

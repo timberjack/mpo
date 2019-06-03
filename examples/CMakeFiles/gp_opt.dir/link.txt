@@ -1,0 +1,1 @@
+/usr/bin/c++   -O3 -DASCO -std=c++11 -g -fopenmp -O3 -DNDEBUG    -rdynamic CMakeFiles/gp_opt.dir/gp_opt.cpp.o  -o ../bin/gp_opt -Wl,-rpath,/usr/local/lib ../lib/libmpo.a -lnlopt ../bayesopt/lib/libbayesopt.a /usr/local/lib/libnlopt.so ../inih/extra/libinih.a ../lib/libde_interface.a -lm 

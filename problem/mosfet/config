@@ -1,0 +1,22 @@
+# Flow #
+Netlist name:mosfet.sp
+Output file name:mosfetout
+#
+
+# Parameters #
+:#vfb0#:-0.5:-2:1:0.01:OPT
+:#k1#:0.6:0.3:1:0.01:OPT
+:#muz#:600:300:1500:1:OPT
+:#x2m#:0:-10:10:0.01:OPT
+:#u00#:0.1:0:0.5:0.001:OPT
+:#mus#:700:300:1500:1:OPT
+:#x3ms#:5:0:50:0.01:OPT
+:#u1#:0.1:0:1:0.001:OPT
+:#alpha#:1:1e-3:10::1e-3:OPT
+#
+
+# Measurements #
+:comp1=:1:MIN:---
+:comp2=:1:MIN:---
+#
+

@@ -1,0 +1,57 @@
+*Two imput OPAMP
+** HSPICE RF Simulation Options: C:\Users\Tim\Desktop\dcdc\amp2.cir
+.option sim_accuracy=10
+*.option sim_ac=15
+.option ingold=1
+.option POST=1
+.option nomod
+.option filetype=ascii
+
+.model pmos pmos level=54 version=4.4
+.model nmos nmos level=54 version=4.4
+
+*.PARAM tsim = 160u
+
+m8  ib_amp ib_amp vdd   vdd pmos w=2u l=0.1u
+m7  net8   ib_amp vdd   vdd pmos w=2u l=0.1u
+m1  net1   _net0  net8  vdd pmos w=1u l=0.2u
+m0  net5   _net1  net8  vdd pmos w=1u l=0.2u
+m3  net1   net1   vss   vss nmos w=1u l=0.2u
+m2  net5   net5   vss   vss nmos w=1u l=0.2u
+
+m9  net67  net23  vdd   vdd pmos w=2u l=0.1u
+m6  net23  net23  vdd   vdd pmos w=2u l=0.1u
+m29 outc   net52  net67 vdd pmos w=2u l=0.1u
+m28 net52  net52  net23 vdd pmos w=2u l=0.1u
+m4  net52  net5   vss   vss nmos w=1u l=0.1u
+m5  outc   net1   vss   vss nmos w=1u l=0.1u
+
+r1 net01 _net1 2k
+c1 _net1 outc  5.6e-12
+r2 _net1 net2  33k
+c2 net2  outc  68e-12
+
+vdd vdd 0 3.3
+vss vss 0 0
+
+v_0 _net0 0 1.65
+v_1 _net1 0 3.3
+*v_0 _net0 0 1.2
+*v_1 net01 0 2 SIN (1.65 1.65 10e6)
+*vinc _net1 0 PWL (0 0 160u 0)
+iamp ib_amp vss 0.5u
+
+*.tran 0.1n 1u
+*.tran 10n 160u
+.dc v_1 0 3.3 0.001
+
+.control
+run
+write amp2.tr0 v(outc) v(net01,_net0) v(ib_amp) v(net8) v(net1) v(net5)
+quit
+*plot v(in) v(out)
+*write C:\Users\Tim\Desktop\dcdc\amp2.tr0 v(ib_amp) v(net8) v(net1) v(net5) @m7[id]
+*write C:\Users\Tim\Desktop\dcdc\amp2.tr0 v(vout) v(_net1,_net0) v(ib_amp) v(net8) v(net1) v(net5)
+.endc
+
+.end

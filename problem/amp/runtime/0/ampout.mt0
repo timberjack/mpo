@@ -1,0 +1,6 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03 64-BIT'
+.TITLE '*amp.sp mos operational amplifier optimization'
+ delayr           delayf           tot_power        area_min          
+ temper           alter#            
+    failed           failed         4.993e-04        2.007e-08        
+   25.0000           1.0000         

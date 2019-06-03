@@ -1,0 +1,25 @@
+# Flow #
+Netlist name:tristateio.sp
+Output file name:tristateioout
+#
+
+# Parameters #
+Width PMOS 2:#wp2#:70u:30u:330u:0.01u:OPT
+Width NMOS 2:#wn2#:22u:15u:400u:0.01u:OPT
+Width PMOS 3:#wp3#:400u:100u:500u:0.01u:OPT
+Width NMOS 3:#wn3#:190u:80u:580u:0.01u:OPT
+Width PMOS 4:#wp4#:670u:150u:800u:0.01u:OPT
+Width NMOS 4:#wn4#:370u:50u:500u:0.01u:OPT
+Width PMOS 5:#wp5#:1200u:1000u:5000u:0.01u:OPT
+Width NMOS 5:#wn5#:600u:400u:2500u:0.01u:OPT
+Width PMOS 10:#wp10#:240u:150u:450u:0.01u:OPT
+Width NMOS 10:#wn10#:140u:30u:280u:0.01u:OPT
+Width PMOS 11:#wp11#:240u:150u:450u:0.01u:OPT
+#
+
+# Measurements #
+:rmspowo=:1:MIN:---
+:tfopt=:1:LE:5n
+:tropt=:1:LE:5n
+#
+

@@ -1,0 +1,34 @@
+ ****** HSPICE -- C-2009.09 32-BIT (Aug 24 2009) linux ******                   
+  Copyright (C) 2009 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: inv.sp                                                            
+ lic:  
+ lic: FLEXlm: v8.5b 
+ lic: USER:   dzcad                HOSTNAME: dzcad-desktop1 
+ lic: HOSTID:                      PID:      3217 
+ lic: Using FLEXlm license file: 
+ lic: 27000@dzcad-desktop1 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2020.12 
+ lic: NODE LOCKED license on hostid  
+ lic:   
+ Init: read install configuration file: /usr/synopsys/SPICE-2009.09/hspice/meta.cfg
+ Init: read design configuration file: inv.cfg
+ **warning** illegal config file syntax on line= 1
+  of file=inv.cfg
+ =>#optimization flow#<=
+ **error** (inv.sp:13)syntax error when fetching "{V_SUPPLY}" 
+
+Syntax reference: 
+Vxxx n+ n- [[DC=] dcval tranfun [AC=acmag acphase]]
+Ixxx n+ n- [[DC=] dcval tranfun [AC=acmag acphase]]
++ [M=val]
+
+
+
+               ***** job aborted
+ lic: Release hspice token(s) 

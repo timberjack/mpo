@@ -1,0 +1,167 @@
+g++  -c -Wall -DSC_INCLUDE_FX -O3  -lm -I/home/tim/SystemC/systemc-ams-1.0Beta2/include -I/usr/local/systemc-2.2.0/include run_spv2.cpp
+In file included from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv.h:49:0,
+                 from /usr/local/systemc-2.2.0/include/sysc/communication/sc_signal_rv.h:61,
+                 from /usr/local/systemc-2.2.0/include/systemc:74,
+                 from /usr/local/systemc-2.2.0/include/systemc.h:237,
+                 from /home/tim/SystemC/systemc-ams-1.0Beta2/include/systemc-ams.h:52,
+                 from run_spv2.cpp:12:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h: In member function ‘sc_dt::sc_logic_value_t sc_dt::sc_lv_base::get_bit(int) const’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:310:33: warning: suggest parentheses around arithmetic in operand of ‘|’
+In file included from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_mant.h:51:0,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_rep.h:56,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxval.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:50,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fix.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fixed.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/fx.h:49,
+                 from /usr/local/systemc-2.2.0/include/systemc:90,
+                 from /usr/local/systemc-2.2.0/include/systemc.h:237,
+                 from /home/tim/SystemC/systemc-ams-1.0Beta2/include/systemc-ams.h:52,
+                 from run_spv2.cpp:12:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h: In function ‘sc_dt::sc_numrep sc_dt::scfx_parse_prefix(const char*&)’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:141:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:145:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:155:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:159:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:169:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:173:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:189:48: warning: suggest parentheses around ‘&&’ within ‘||’
+run_spv2.cpp: In member function ‘virtual void spv::processing()’:
+run_spv2.cpp:37:7: warning: unused variable ‘done’
+In file included from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_bit_proxies.h:65:0,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_bv_base.h:50,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:56,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/communication/sc_signal_rv.h:61,
+                 from /usr/local/systemc-2.2.0/include/systemc:74,
+                 from /usr/local/systemc-2.2.0/include/systemc.h:237,
+                 from /home/tim/SystemC/systemc-ams-1.0Beta2/include/systemc-ams.h:52,
+                 from run_spv2.cpp:12:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h: In function ‘X& sc_dt::b_and_assign_(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_lv_base]’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:373:32:   instantiated from ‘X& sc_dt::operator&=(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:408:34:   instantiated from ‘const sc_dt::sc_lv_base sc_dt::operator&(const sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_bv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:1959:1:   instantiated from here
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1002:51: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1002:51: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1003:28: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h: In function ‘X& sc_dt::b_or_assign_(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_lv_base]’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:475:31:   instantiated from ‘X& sc_dt::operator|=(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:510:34:   instantiated from ‘const sc_dt::sc_lv_base sc_dt::operator|(const sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_bv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:1960:1:   instantiated from here
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1026:53: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1026:53: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h: In function ‘X& sc_dt::b_xor_assign_(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_lv_base]’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:577:32:   instantiated from ‘X& sc_dt::operator^=(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:612:34:   instantiated from ‘const sc_dt::sc_lv_base sc_dt::operator^(const sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_bv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:1961:1:   instantiated from here
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1051:28: warning: suggest parentheses around arithmetic in operand of ‘|’
+g++  -c -Wall -DSC_INCLUDE_FX -O3  -lm -I/home/tim/SystemC/systemc-ams-1.0Beta2/include -I/usr/local/systemc-2.2.0/include vco.cpp
+In file included from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv.h:49:0,
+                 from /usr/local/systemc-2.2.0/include/sysc/communication/sc_signal_rv.h:61,
+                 from /usr/local/systemc-2.2.0/include/systemc:74,
+                 from /usr/local/systemc-2.2.0/include/systemc.h:237,
+                 from vco.cpp:1:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h: In member function ‘sc_dt::sc_logic_value_t sc_dt::sc_lv_base::get_bit(int) const’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:310:33: warning: suggest parentheses around arithmetic in operand of ‘|’
+In file included from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_mant.h:51:0,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_rep.h:56,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxval.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:50,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fix.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fixed.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/fx.h:49,
+                 from /usr/local/systemc-2.2.0/include/systemc:90,
+                 from /usr/local/systemc-2.2.0/include/systemc.h:237,
+                 from vco.cpp:1:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h: In function ‘sc_dt::sc_numrep sc_dt::scfx_parse_prefix(const char*&)’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:141:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:145:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:155:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:159:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:169:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:173:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:189:48: warning: suggest parentheses around ‘&&’ within ‘||’
+In file included from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_bit_proxies.h:65:0,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_bv_base.h:50,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:56,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/communication/sc_signal_rv.h:61,
+                 from /usr/local/systemc-2.2.0/include/systemc:74,
+                 from /usr/local/systemc-2.2.0/include/systemc.h:237,
+                 from vco.cpp:1:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h: In function ‘X& sc_dt::b_and_assign_(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_lv_base]’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:373:32:   instantiated from ‘X& sc_dt::operator&=(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:408:34:   instantiated from ‘const sc_dt::sc_lv_base sc_dt::operator&(const sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_bv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:1959:1:   instantiated from here
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1002:51: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1002:51: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1003:28: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h: In function ‘X& sc_dt::b_or_assign_(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_lv_base]’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:475:31:   instantiated from ‘X& sc_dt::operator|=(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:510:34:   instantiated from ‘const sc_dt::sc_lv_base sc_dt::operator|(const sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_bv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:1960:1:   instantiated from here
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1026:53: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1026:53: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h: In function ‘X& sc_dt::b_xor_assign_(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_lv_base]’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:577:32:   instantiated from ‘X& sc_dt::operator^=(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:612:34:   instantiated from ‘const sc_dt::sc_lv_base sc_dt::operator^(const sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_bv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:1961:1:   instantiated from here
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1051:28: warning: suggest parentheses around arithmetic in operand of ‘|’
+g++  -Wall -DSC_INCLUDE_FX -O3  -lm -I/home/tim/SystemC/systemc-ams-1.0Beta2/include -I/usr/local/systemc-2.2.0/include /home/tim/SystemC/systemc-ams-1.0Beta2/src/scams/impl/*/*.o /home/tim/SystemC/systemc-ams-1.0Beta2/src/scams/impl/*/*/*.o /home/tim/SystemC/systemc-ams-1.0Beta2/src/scams/impl/*/*/*/*.o /home/tim/SystemC/systemc-2.2.0/objdir/src/sysc/*/*.o /home/tim/SystemC/systemc-2.2.0/objdir/src/sysc/*/*/*.o run_spv2.o vco.o test_vco.cpp -o simu_vco
+In file included from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv.h:49:0,
+                 from /usr/local/systemc-2.2.0/include/sysc/communication/sc_signal_rv.h:61,
+                 from /usr/local/systemc-2.2.0/include/systemc:74,
+                 from /usr/local/systemc-2.2.0/include/systemc.h:237,
+                 from /home/tim/SystemC/systemc-ams-1.0Beta2/include/systemc-ams.h:52,
+                 from test_vco.cpp:1:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h: In member function ‘sc_dt::sc_logic_value_t sc_dt::sc_lv_base::get_bit(int) const’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:310:33: warning: suggest parentheses around arithmetic in operand of ‘|’
+In file included from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_mant.h:51:0,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_rep.h:56,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxval.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:50,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fix.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fixed.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/fx/fx.h:49,
+                 from /usr/local/systemc-2.2.0/include/systemc:90,
+                 from /usr/local/systemc-2.2.0/include/systemc.h:237,
+                 from /home/tim/SystemC/systemc-ams-1.0Beta2/include/systemc-ams.h:52,
+                 from test_vco.cpp:1:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h: In function ‘sc_dt::sc_numrep sc_dt::scfx_parse_prefix(const char*&)’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:141:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:145:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:155:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:159:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:169:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:173:48: warning: suggest parentheses around ‘&&’ within ‘||’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/scfx_utils.h:189:48: warning: suggest parentheses around ‘&&’ within ‘||’
+In file included from test_vco.cpp:4:0:
+run_spv2.cpp: In member function ‘virtual void spv::processing()’:
+run_spv2.cpp:37:7: warning: unused variable ‘done’
+In file included from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_bit_proxies.h:65:0,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_bv_base.h:50,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:56,
+                 from /usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv.h:49,
+                 from /usr/local/systemc-2.2.0/include/sysc/communication/sc_signal_rv.h:61,
+                 from /usr/local/systemc-2.2.0/include/systemc:74,
+                 from /usr/local/systemc-2.2.0/include/systemc.h:237,
+                 from /home/tim/SystemC/systemc-ams-1.0Beta2/include/systemc-ams.h:52,
+                 from test_vco.cpp:1:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h: In function ‘X& sc_dt::b_and_assign_(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_lv_base]’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:373:32:   instantiated from ‘X& sc_dt::operator&=(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:408:34:   instantiated from ‘const sc_dt::sc_lv_base sc_dt::operator&(const sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_bv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:1959:1:   instantiated from here
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1002:51: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1002:51: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1003:28: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h: In function ‘X& sc_dt::b_or_assign_(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_lv_base]’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:475:31:   instantiated from ‘X& sc_dt::operator|=(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:510:34:   instantiated from ‘const sc_dt::sc_lv_base sc_dt::operator|(const sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_bv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:1960:1:   instantiated from here
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1026:53: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1026:53: warning: suggest parentheses around arithmetic in operand of ‘|’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h: In function ‘X& sc_dt::b_xor_assign_(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_lv_base]’:
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:577:32:   instantiated from ‘X& sc_dt::operator^=(sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_lv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_lv_base.h:612:34:   instantiated from ‘const sc_dt::sc_lv_base sc_dt::operator^(const sc_dt::sc_proxy<X>&, const sc_dt::sc_proxy<Y>&) [with X = sc_dt::sc_bv_base, Y = sc_dt::sc_bv_base]’
+/usr/local/systemc-2.2.0/include/sysc/datatypes/fx/sc_fxnum.h:1961:1:   instantiated from here
+/usr/local/systemc-2.2.0/include/sysc/datatypes/bit/sc_proxy.h:1051:28: warning: suggest parentheses around arithmetic in operand of ‘|’

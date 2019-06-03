@@ -1,0 +1,1 @@
+/usr/bin/c++   -fopenmp -O3 -DNDEBUG    -rdynamic CMakeFiles/config_test.dir/src/config.cpp.o CMakeFiles/config_test.dir/src/benchmark.cpp.o CMakeFiles/config_test.dir/src/main.cpp.o  -o config_test inih/extra/libinih.a DesignEasy/DesignEasy/SourceCode/libde_interface.a -lm 

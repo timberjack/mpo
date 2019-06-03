@@ -1,0 +1,14 @@
+***** HSPICE -- D-2010.03 64-BIT (Feb 23 2010) linux ******
+ Input File: mem_chaos.sp
+ lic: No 'setenv LM_LICENSE_FILE' in current environment'
+ lic:
+ lic: FLEXlm: v8.5b
+ lic: USER:   timber30             HOSTNAME: ubuntu
+ lic: HOSTID:                      PID:      119109
+ lic: Using FLEXlm license file:
+ lic: /usr/local/flexlm/licenses/license.dat
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2020/2007.9
+ lic: NODE LOCKED license on hostid
+ lic:
+ lic: Release hspice token(s)

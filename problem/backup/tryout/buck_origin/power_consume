@@ -1,0 +1,12 @@
+# Info #
+Name:POWER_CONSUME
+Symbol:ZUGF
+Unit:W
+Analysis type:TRAN
+Definition:Power supply consumption
+Note: 
+#
+
+# Commands #
+.MEASURE TRAN #SYMBOL#  rms par('i(#NODE#)*v(#NODE#)') from=100u to=150u
+#

@@ -1,0 +1,4 @@
+BSIM3 Model (Supports: v3.2, v3.2.2, v3.2.3, v3.2.4)
+Parameter Checking.
+Model = pfet
+W = 4e-06, L = 2e-06, M = 1

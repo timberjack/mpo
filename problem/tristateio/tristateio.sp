@@ -1,0 +1,85 @@
+*Tri-State I/O Optimization
+.options defl=1.2u nomod post=2
++ relv=1e-3 absvar=.5 relvar=.01
+
+.global lgnd lvcc enb
+.macro buff data out
+mp1  DATAN DATA LVCC  LVCC p w=35u
+mn1  DATAN DATA LGND  LGND n w=17u
+
+mp2 BUS DATAN LVCC  LVCC  p w=#wp2#
+mn2 BUS DATAN LGND  LGND  n w=#wn2#
+
+mp3 PEN PENN  LVCC  LVCC  p  w=#wp3#
+mn3 PEN PENN  LGND  LGND  n w=#wn3#
+
+mp4 NEN NENN  LVCC  LVCC  p w=#wp4#
+mn4 NEN NENN  LGND  LGND  n w=#wn4#
+
+mp5 OUT PEN   LVCC  LVCC  p w=#wp5# l=1.8u
+mn5 OUT NEN   LGND  LGND  n w=#wn5# l=1.8u
+
+mp10 NENN  BUS  LVCC  LVCC p w=#wp10#
+mn12 PENN  ENB  NENN LGND  n w=#wp10#
+mn10 PENN  BUS  LGND  LGND n w=wn10
+mp11 NENN  ENB  LVCC  LVCC p w=#wp11#
+mp12 NENN  ENBN PENN LVCC p w=#wp11#
+mn11 PENN  ENBN LGND  LGND n w=80u
+mp13 ENBN ENB LVCC LVCC p w=35u
+mn13 ENBN ENB LGND LGND n w=17u
+cbus BUS  LGND  1.5pf
+cpad OUT  LGND  5.0pf
+.ends
+* * input signals  *
+vcc VCC GND 5V
+
+lvcc vcc lvcc 6nh
+lgnd lgnd gnd 6nh
+vin  DATA    LGND pl (0v 0n, 5v 0.7n)
+vinb DATAbar LGND pl (5v 0n, 0v 0.7n)
+ven ENB GND 5V
+
+** circuit **
+x1 data out buff
+cext1 out  GND  50pf
+x2 databar outbar buff
+cext2 outbar  GND  50pf
+
+.param
++      wp2=opt1(70u,30u,330u)
++      wn2=opt1(22u,15u,400u)
++      wp3=opt1(400u,100u,500u)
++      wn3=opt1(190u,80u,580u)
++      wp4=opt1(670u,150u,800u)
++      wn4=opt1(370u,50u,500u)
++      wp5=opt1(1200u,1000u,5000u)
++      wn5=opt1(600u,400u,2500u)
++      wp10=opt1(240u,150u,450u)
++      wn10=opt1(140u,30u,280u)
++      wp11=opt1(240u,150u,450u)
+
+.tran 1ns 15ns
+.tran .5ns 15ns sweep optimize=opt1 results=tfopt,tropt,rmspowo,model=optmod
+** put soft limit for power with minval setting (i.e. values
+** less than 1000mw are less important)
+.measure rmspowo rms  power goal=100mw  minval=1000mw
+.meas tran tfopt  trig v(data) val=2.5 rise=1 targ v(out)
++ val=2.5 fall=1 goal 5.0n
+.meas tran tropt trig v(databar) val=2.5 fall=1 targ
++ v(outbar) val=2.5 rise=1 goal 5.0n
+
+.model optmod opt itropt=30  max=1e+5
+
+.tran 1ns 15ns
+* output section *
+*.plot tran v(data) v(out)
+.plot tran v(databar) v(outbar)
+.MODEL N NMOS LEVEL=3 VTO=0.7 UO=500 KAPPA=.25 KP=30U ETA=.03
++ THETA=.04 VMAX=2E5 NSUB=9E16 TOX=500E-10 GAMMA=1.5 PB=0.6
++ JS=.1M XJ=0.5U LD=0.0 NFS=1E11 NSS=2E10 CGSO=200P CGDO=200P
++ CGBO=300P
+.MODEL P PMOS LEVEL=3 VTO=-0.8 UO=150 KAPPA=.25 KP=15U
++ ETA=.03 THETA=.04 VMAX=5E4 NSUB=1.8E16 TOX=500E-10 NFS=1E11
++ GAMMA=.672 PB=0.6 JS=.1M XJ=0.5U LD=0.0
++ NSS=2E10 CGSO=200P CGDO=200P CGBO=300P
+.end

@@ -1,0 +1,3 @@
+# 
+hspice64 -C runtime/1/trival.sp -o runtime/1/amp3out > /dev/null 2>&1 
+mv runtime/1/amp3out.lis runtime/1/amp3out 

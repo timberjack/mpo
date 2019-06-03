@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='D-2010.03 64-BIT'
+.TITLE '$level 13 mosfet optimization'
+ comp1            comp2            temper           alter#            
+    0.1200           0.1200          25.0000           1.0000         

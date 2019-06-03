@@ -1,0 +1,16 @@
+# Flow #
+Netlist Name:VarIn
+Output file name:math.out
+#
+
+
+# Parameters #
+group 1:#X#:10:-40:40:0.0000001:OPT
+group 2:#Y#:10:-40:40:0.0000001:OPT
+#
+
+
+# Measurements #
+Output:COST=:---:MIN:---
+#
+

@@ -1,0 +1,1 @@
+mpicxx   -O3 -DASCO -std=c++11 -g -fopenmp -O3 -DNDEBUG    -rdynamic CMakeFiles/de_opt.dir/de_opt.cpp.o  -o ../bin/de_opt -Wl,-rpath,/usr/local/lib ../lib/libmpo.a -lnlopt ../bayesopt/lib/libbayesopt.a /usr/local/lib/libnlopt.so ../inih/extra/libinih.a ../lib/libde_interface.a -lm /usr/local/lib/libmpicxx.so /usr/local/lib/libmpi.so -lboost_mpi -lboost_serialization 

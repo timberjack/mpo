@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='G-2012.06-SP1 64-BIT'
+.TITLE '*three stage operational amplifier'
+ ac_power         zugf             ugfzsr           zsr               
+ dc_gain          phasezpm         zpm1             zpm2              
+ temper           alter#            
+  1.777e-03        2.205e+06        2.205e+06        6.923e+06        
+  1.289e+02       -1.274e+02        5.253e+01        5.253e+01        
+  2.500e+01       1                 
